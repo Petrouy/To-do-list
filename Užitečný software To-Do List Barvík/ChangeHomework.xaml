@@ -1,0 +1,62 @@
+﻿<Window x:Class="Užitečný_software_To_Do_List_Barvík.ChangeHomework"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Užitečný_software_To_Do_List_Barvík"
+        mc:Ignorable="d"
+        Title="ChangeHomework" Height="500" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3.2*"/>
+            <RowDefinition Height="1.1*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="To-Do List - Change" Grid.Column="1" Grid.Row="0" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10, 0"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Label Content="Name:"/>
+            <TextBox Text="{Binding Name}" Margin="20, 0" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Label Content="Time:"/>
+            <TextBox Text="{Binding Time}" Margin="20, 0" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="1">
+            <Label Content="Place:"/>
+            <TextBox Text="{Binding Place}" Margin="20, 0" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Grid.Column="1">
+            <Label Content="Friends:"/>
+            <TextBox Text="{Binding Friends}" Margin="20, 0" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Grid.Column="1">
+            <Label Content="Comment:"/>
+            <TextBox Text="{Binding Comment}" Margin="20,0,20.4,0" Height="120" />
+        </StackPanel>
+
+        <Button x:Name="AddButton" Content="Change" Click="AddButton_Click" Grid.Row="6" Grid.Column="1" Height="40" Width="150"/>
+
+        <Button x:Name="DeleteButton" Content="Delete" Click="DeleteButton_Click" Grid.Row="6" Grid.Column="1" Height="30" Width="50" HorizontalAlignment="Right"/>
+
+        <Button x:Name="SetAsDoneButton" Content="Done" Click="DoneButton_Click" Grid.Row="6" Grid.Column="1" Height="30" Width="50" HorizontalAlignment="Left"/>
+
+
+    </Grid>
+</Window>
