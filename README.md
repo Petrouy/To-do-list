@@ -90,6 +90,3 @@ Verze 1.0.0
     * Odstranění úkolů bude přes Buttony v hlavním okně u každého okna
     * Při špatném zadání nového úkolu se zobrazí messagebox s nápisem Error
 
-![image](https://user-images.githubusercontent.com/75619714/120157645-85be7f80-c1f3-11eb-9b8c-713edcc05f66.png)
-
-
